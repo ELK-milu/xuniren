@@ -502,7 +502,7 @@ def video_pre_process():
     parser.add_argument('--head_ckpt', type=str, default='', help="head model")
 
     ### GUI options
-    parser.add_argument('--gui', action='store_true', help="start a GUI")
+    parser.add_argument('--gui', default=True, action='store_true', help="start a GUI")
     parser.add_argument('--W', type=int, default=450, help="GUI width")
     parser.add_argument('--H', type=int, default=450, help="GUI height")
     parser.add_argument('--radius', type=float, default=3.35, help="default GUI camera radius from center")
